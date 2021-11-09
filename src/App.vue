@@ -1,17 +1,24 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <br>
+    <Category-menu></Category-menu>
+    <ProductList
+        category="31"
+    ></ProductList>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import CategoryMenu from "@/components/CategoryMenu";
+import ProductList from "@/components/ProductList";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ProductList,
+    CategoryMenu
   }
 }
 </script>
